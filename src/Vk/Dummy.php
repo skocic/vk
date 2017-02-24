@@ -2,8 +2,12 @@
 
 namespace Vk;
 
+/**
+ * Dummy class
+ */
 class Dummy
 {
+    /** @var int */
     private $var;
 
     /**
@@ -15,7 +19,7 @@ class Dummy
     }
 
     /**
-     * @param mixed $var
+     * @param int $var
      *
      * @return Dummy
      */
@@ -25,5 +29,4 @@ class Dummy
 
         return $this;
     }
-
 }
