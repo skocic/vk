@@ -1,0 +1,41 @@
+{
+    "name":        "skocic/vk",
+
+    "description": "VK PHP SDK.",
+
+    "keywords": [
+         "vk", "sdk"
+     ],
+
+    "homepage":    "https://github.com/skocic/vk",
+
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name":     "Sasa Kocic",
+            "role":     "Developer"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.4.0"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit":           "4.8.*",
+        "squizlabs/php_codesniffer": "2.2.*"
+    },
+
+   "autoload": {
+        "psr-4": {
+            "Vk\\": "src/Vk/"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+             "Vk\\Tests\\": "tests/"
+        }
+    }
+}
