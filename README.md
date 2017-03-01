@@ -1,8 +1,8 @@
-# VK SDK for PHP (v5)
+# VK SDK for PHP
 
-[![Build Status](https://img.shields.io/travis/facebook/php-graph-sdk/5.4.svg)](https://travis-ci.org/facebook/php-graph-sdk)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/facebook/facebook-php-sdk-v4/badges/quality-score.png?b=5.4)](https://scrutinizer-ci.com/g/facebook/facebook-php-sdk-v4/?branch=5.4)
-[![Latest Stable Version](http://img.shields.io/badge/Latest%20Stable-5.4.4-blue.svg)](https://packagist.org/packages/facebook/graph-sdk)
+[![Build Status](https://img.shields.io/travis/facebook/php-graph-sdk/5.4.svg)](https://travis-ci.org/sasakocic/vk)
+[![Latest Stable Version](http://img.shields.io/badge/Latest%20Stable-5.4.4-blue.svg)](https://packagist.org/packages/sasakocic/vk)
+[![Code Style Status](https://styleci.io/repos/83059149/shield)](https://styleci.io/repos/83059149)
 
 
 This repository contains the open source PHP SDK that allows you to access the VKontakte Platform from your PHP app.
@@ -10,7 +10,7 @@ This repository contains the open source PHP SDK that allows you to access the V
 
 ## Installation
 
-The Facebook PHP SDK can be installed with [Composer](https://getcomposer.org/). Run this command:
+The VK PHP SDK can be installed with [Composer](https://getcomposer.org/). Run this command:
 
 ```sh
 composer require skocic/vk
@@ -23,11 +23,11 @@ composer require skocic/vk
 Simple GET example of a user's profile.
 
 ```php
-$fb = new \Facebook\Facebook([
-  'app_id' => '{app-id}',
-  'app_secret' => '{app-secret}',
-  'default_graph_version' => 'v2.8',
-  //'default_access_token' => '{access-token}', // optional
+$fb = new \Vk([
+		'client_id' => '{app-id}',
+		'client_secret' => '{app-secret}',
+		'redirect_uri' => '{redirect-url}',
+		'scope' => ['email', 'offline'],
 ]);
 ```
 
